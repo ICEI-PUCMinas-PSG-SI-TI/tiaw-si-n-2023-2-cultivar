@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Orquídeas</title>
+  <link href="/codigo/styles/style_rcorquidea.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='/codigo/styles/menu.css'>
+</head>
+
+<body>
+  <nav id="navegacao">
+    <ul id='bloco1'>      
+      <a href="index.html" class="hidden">
+        <img src="../assets/cultivar_logo.jpg" id="logoNavbar" alt="logoCultivar">
+      </a>
+      <!--<a href="#" >
+        <li class='lista'>CULTIVO</li>
+      </a>
+      <a href="#">
+        <li class='lista'>RECEITAS</li>
+      </a>-->
+    </ul>
+    <ul id='bloco2'>
+    <li class='lista'>
+    <div id="perfil"> 
+        
+        <img src="../assets/perfil.png" alt="Foto de perfil">
+          <!--Modal para cadastro-->
+        <div id="modal" class="modal">
+          <form id="form">
+            <h3>Cadastro do Profisional</h3>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="prof">Profissão:</label>
+            <select name="profissao" id="prof">"
+              <option value="biologo">Biologista</option>
+              <option value="botanico">Botanico</option>
+              <option value="agricultor">Agricultor</option>
+              <option value="florista">Florista</option>
+              <option value="usuario">Usuario</option>
+              <option value="NaN">Nenhuma opção</option>
+            </select><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="confirmPassword">Confirme sua senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+            <div id="button-container">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </li>
+    </ul>
+
+  </nav>
+  <div class="centralizado">
+    <legend>ATENÇÃO!!</legend>
+    <fieldset>
+    <p>As receitas criadas a partir das Orquídeas não podem ser feitas sem conhecimento o devido cuidado,por isso as receitas não serão liberadas ao publico </p><br>
+    </fieldset>
+    <a href="/codigo/telas/rcGirassol.html"><button type="submit">Anterior</button>
+    
+    <a href="/codigo/telas/rcArroz.html"><button type="submit">Proximo</button>
+  </div>
+  <script src="/codigo/scripts/script_rc_orquidea.js"></script>
+  <script src='/codigo/scripts/menu.js'></script>
+</body>
+
+</html>

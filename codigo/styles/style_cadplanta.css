@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: whitesmoke;
+  }
+
+.content-cadastroPlanta {
+    width: 100%;
+    max-width: 800px;
+    margin: 12vh auto 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: bold;
+    font-weight: 600;
+    color: darkgreen;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lightgreen;
+    border-radius: 4px;
+    color: #333;
+}
+
+#cadastrar_plantaBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cadastrar_plantaBtn:hover {
+    background-color: lightgreen;
+    transition: all 0.3s;
+}

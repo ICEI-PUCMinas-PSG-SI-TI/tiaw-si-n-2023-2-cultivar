@@ -1,0 +1,259 @@
+  /**************GLOBAL******************/
+#conectar{
+	padding-top: 0.3vw;padding-bottom: 0.3vw;
+	padding-left: 0.3vw;padding-right: 0.3vw;
+	color: white;
+	font-weight: bold;
+	font-size: 1vw;
+	border: solid 1px green;
+	border-radius: 3px;
+	background-color: green;
+	  margin-right: 30px;margin-left: 30px;
+  }
+  #conectar{
+	cursor: pointer;
+  }
+  #logoNavbar{
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	/*max-width:3vw;*/
+	max-height:60%;
+	width: auto;
+	height: auto;
+  }
+  #navegacao{
+	align-items: center;
+  }
+  /*************************************/
+
+  /***************DESKTOP***************/
+  @media (min-width: 800px){
+  #navegacao{
+	display: flex;
+	height: 9vh;
+	z-index: 14;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	font-size: 1.3vw;
+    box-shadow: 0 1px 100px -26px black;
+	justify-content: space-between;
+  }
+  #bloco1{
+	height: 100%;
+  }
+  #bloco1 > a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+  }
+  #bloco2{
+	height: 100%;
+  }
+  #bloco2 > li{
+	height: 100%;
+  }
+  #perfil{
+	position:relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+  }
+  #perfil:hover{
+	cursor: pointer;
+  }
+  #modal{
+	width: 30vw;
+	display:none;
+	position:absolute;
+	top:100%;
+	right: 100%;
+	background-color: white;
+	border-radius: 3px;
+	padding: 3vh;
+	border: solid 1px lightgreen;
+}
+#modal > form{
+	width:100%;
+}
+h3{
+	text-align: center;
+	color: green;
+}
+#modal > form > label{
+	display: block;
+	width:100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 450;
+}
+#modal > form > input, #modal > form > select{
+	padding: 0.5vh;
+	width: 70%
+}
+#modal > form > #button-container{
+	text-align: center;
+}
+#modal > form > #button-container > button{
+	width: 70%;
+	padding: 1vh;
+	background-color: white;
+	font-weight: 600;
+	border: solid 1px lightgreen;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#modal > form > #button-container > button:hover{
+	background-color: lightgreen;
+	cursor:pointer;
+	transition: all 0.3s;
+}
+  ul > li, ul > a{
+	text-decoration: none;
+	list-style: none;
+	font-family: Bahnschrift, Cascadia Code, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  ul > li, ul > a:active{
+	color: black;
+  }
+  #pesquisa{
+	border-radius: 9px;
+	z-index: 16;
+	display: flex;
+	font-style:italic;
+	border: solid 1px lightgreen;
+  } 
+  #pesquisar{
+	border:none;
+	border-radius: 9px;
+	padding: 1.3vh;
+	width: 40vw;
+	font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+	font-size: 1vw;
+  }
+  #pesquisar:focus{
+	  box-shadow: 0 0 0 0;
+	  outline: 0;
+  }
+  #lupa{
+	width: 20%;
+	background-color: lightgreen;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+}
+  ::-webkit-input-placeholder {
+	 font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+	opacity: 0.6;
+  }
+  :-moz-placeholder {
+	 font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  ::-moz-placeholder {
+	 font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  :-ms-input-placeholder {  
+	 font-style: italic; 
+	 font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  }
+  /************************************/
+  
+  
+  
+  /**************MENU MOBILE******************/
+  @media (max-width: 799px){
+	/*NAVEGACAO*/
+	.hidden{
+	  display: none;
+	}
+	#pesquisa{
+	  margin-left: 10%;
+	}
+	#conectar{
+	  padding: 0.3rem;
+	  font-size: 1rem;
+		  color: white;
+		  font-weight: bold;
+		  border: solid 1px green;
+		  border-radius: 3px;
+		  background-color: green;
+	  }
+  #navegacao{
+	display: flex;
+	align-items: center;
+	height: 9vh;
+	z-index: 14;
+	width: 100vw;
+	position: fixed;
+	background-color: white;
+  }
+  #logoNavbar{
+	display: none;
+  }
+  
+  #menu{
+	position: fixed;
+	z-index: 30;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 3px;
+	border: solid 1px black;
+	color: black;
+	padding: 3vw;
+	margin-top: 1.5vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+  }
+  
+  #pesquisa{
+	display: flex;
+	border: solid 1px lightgreen;
+	padding-left: 3px;padding-right: 3px;
+  } 
+  #pesquisar{
+	border:none;
+	padding: 1vw;
+	width: 9vw;
+	font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+	font-size: 1vw;
+	border-radius: 3px;
+  }
+  #pesquisar:focus{
+	  box-shadow: 0 0 0 0;
+	  outline: 0;
+  }
+  #lupa{
+	background-color: lightgreen;
+	margin-right: 9px;
+	border: none;
+	padding: 0.3%;
+	margin-left: 3px;
+  }
+  
+  #pesquisar{
+	font-size: 3vw;
+	border:none;
+	padding: 9%;
+	width: 26vw;
+	font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  #pesquisar:focus{
+	  box-shadow: 0 0 0 0;
+	  outline: 0;
+  }
+  #bloco1{
+	margin-left: 3vw;
+  }
+  #bloco1 > a > li{
+	color: lightgreen;
+	list-style: none;
+	font-weight: bold;
+	font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+  }
+  #bloco1 > a{
+	text-decoration: none;	
+  }
+  
+  }
+  /*******************************************/

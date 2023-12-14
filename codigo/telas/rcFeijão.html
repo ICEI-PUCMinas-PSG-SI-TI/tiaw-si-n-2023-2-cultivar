@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas de Feijão</title>
+  <link rel="stylesheet" href="/codigo/styles/style_rcfeijão.css">
+  <link rel='stylesheet' href='/codigo/styles/menu.css'>
+</head>
+
+<body>
+  
+  <nav id="navegacao">
+    <ul id='bloco1'>      
+      <a href="index.html" class="hidden">
+        <img src="../assets/cultivar_logo.jpg" id="logoNavbar" alt="logoCultivar">
+      </a>
+      <!--<a href="#" >
+        <li class='lista'>CULTIVO</li>
+      </a>
+      <a href="#">
+        <li class='lista'>RECEITAS</li>
+      </a>-->
+    </ul>
+    <ul id='bloco2'>
+    <li class='lista'>
+    <div id="perfil"> 
+        
+        <img src="../assets/perfil.png" alt="Foto de perfil">
+          <!--Modal para cadastro-->
+        <div id="modal" class="modal">
+          <form id="form">
+            <h3>Cadastro do Profisional</h3>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="prof">Profissão:</label>
+            <select name="profissao" id="prof">"
+              <option value="biologo">Biologista</option>
+              <option value="botanico">Botanico</option>
+              <option value="agricultor">Agricultor</option>
+              <option value="florista">Florista</option>
+              <option value="usuario">Usuario</option>
+              <option value="NaN">Nenhuma opção</option>
+            </select><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="confirmPassword">Confirme sua senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+            <div id="button-container">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </li>
+    </ul>
+
+  </nav>
+  
+  <div class="container">
+    <h1>Receitas de Feijão</h1>
+    <div class="recipe-item">
+      <h2>Feijão tropeiro</h2>
+      <form>
+        <div class="recipe-item">
+          <div class="image-container image-1"></div>
+          <fieldset>
+            <legend>Ingredientes</legend>
+
+            <input type="checkbox" name="esov" id="isvo">
+            <label for="isvo"> 150 g de bacon picadinho <br>
+
+              <input type="checkbox" name="esxes" id="ispi">
+              <label for="ispi"> 250 g de linguiça calabresa picadinha<br>
+
+                <input type="checkbox" name="esgir" id="issol">
+                <label for="issol"> 1 xícara (café) de azeite<br>
+
+                  <input type="checkbox" name="essop" id="isman">
+                  <label for="isman"> 2 cebolas picadinhas<br>
+
+                    <input type="checkbox" name="esni" id="isbau">
+                    <label for="isbau"> 6 dentes de alho amassados<br>
+
+                      <input type="checkbox" name="esit" id="islcl">
+                      <label for="islcl"> 500 g de feijão cozido e
+                        escorrido<br>
+
+                        <input type="checkbox" name="esne" id="iscan">
+                        <label for="iscan"> 1 cubo de caldo de bacon<br>
+
+                          <input type="checkbox" name="espif" id="isfip">
+                          <label for="isfip"> 4 ovos fritos inteiros e
+                            picadinhos<br>
+
+                            <input type="checkbox" name="esgvc" id="iscvg">
+                            <label for="iscvg"> cheiro-verde a gosto<br>
+
+                              <input type="checkbox" name="esmfcd" id="iscdfm">
+                              <label for="iscdfm"> 1 e 1/2 colher de
+                                farinha de mandioca crua<br>
+
+                                <input type="checkbox" name="esgas" id="issag">
+                                <label for="issag"> sal a gosto<br>
+
+                                  <input type="checkbox" name="esgap" id="ispag">
+                                  <label for="ispag"> pimenta a gosto<br>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Modo de Preparo</legend>
+            <p>Instruções: Coloque o azeite em uma panela e frite o bacon e a linguiça separadamente, depois reserve. Na
+              mesma panela, frite a cebola e o alho, junte o feijão escorrido e o caldo de bacon. Junte novamente o
+              bacon e
+              a linguiça, acrescente a farinha de mandioca e os ovos fritos picadinhos. Acrescente bastante
+              cheiro-verde.
+              Acerte o sal e a pimenta e está pronto para servir.</p>
+            <button type="submit">Finalizar Receita</button>
+            <div id="mensagem"></div>
+          </fieldset>
+        </div>
+
+        <div class="recipe-item">
+          <h2>Caldo de Feijão</h2>
+          <div class="image-container image-2"></div>
+          <fieldset name="btsx">
+            <legend>Ingredientes</legend>
+
+            <input type="checkbox" name="eslib" id="isgi">
+            <label for="isgi"> 2 xícaras (chá) de feijão cozido <br>
+
+              <input type="checkbox" name="estrig" id="istri">
+              <label for="istri"> 2 xícaras (chá) de água <br>
+
+                <input type="checkbox" name="esto" id="isfer">
+                <label for="isfer"> 1 cebola média <br>
+
+                  <input type="checkbox" name="esch" id="issa">
+                  <label for="issa"> 1/2 xícara (chá) de cheiro-verde <br>
+
+                    <input type="checkbox" name="esxfa" id="isxf">
+                    <label for="isxf"> 1 xícara (chá) de bacon picado <br>
+
+                      <input type="checkbox" name="esovp" id="isvp">
+                      <label for="isvp"> 2 dentes de alho picados <br>
+
+                        <input type="checkbox" name="esgc" id="isgdc">
+                        <label for="isgdc"> Pimenta-do-reino a gosto <br>
+
+                          <input type="checkbox" name="esbg" id="iscgd">
+                          <label for="iscgd"> Sal a gosto <br>
+
+                            <input type="checkbox" name="esals" id="issla">
+                            <label for="issla"> Salsinha picada para decorar <br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Modo de Preparo</legend>
+            <p>Instruções: Bata no liquidificador o feijão cozido, a água, a cebola e o cheiro verde até que fique
+              homogêneo. Reserve. Em uma panela, refogue o bacon e o alho, em seguida despeje a mistura de feijão. Deixe
+              apurar por cerca de 10 minutos em fogo médio. Tempere com a pimenta, o sal e salpique a salsinha picada.
+            <div id="mensagem"></div> 
+            <button type="submit">Finalizar Receita</button>
+      </form>
+      </fieldset>
+    </div>
+  </div>
+  <script src="/codigo/scripts/script_rc_feijão.js"></script>
+  <script src='/codigo/scripts/menu.js'></script>
+</body>
+<a href="/codigo/telas/rcArroz.html"><button type="submit">Anterior</button>
+
+</html>
