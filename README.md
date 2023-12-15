@@ -1,11 +1,11 @@
-# Nome do projeto
+# Ciltivar
 Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
 * Caio De Moro Abjaud
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Pedro Henrique Peixoto
+* Lucas Gabriel
 * Nome completo do aluno 4
 
 ## Professores responsáveis
