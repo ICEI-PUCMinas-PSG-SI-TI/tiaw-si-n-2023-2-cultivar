@@ -24,6 +24,10 @@
   #navegacao{
 	align-items: center;
   }
+  #titulo-cadastro{
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+  }
   /*************************************/
 
   /***************DESKTOP***************/
@@ -48,6 +52,16 @@
 	justify-content: center;
 	height: 100%;
   }
+  #lupa{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 10%;
+	background-color: lightgreen;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+  }
   #bloco2{
 	height: 100%;
   }
@@ -60,7 +74,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-  }
+}
   #perfil:hover{
 	cursor: pointer;
   }
@@ -87,6 +101,7 @@ h3{
 	width:100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 450;
+	color: green
 }
 #modal > form > input, #modal > form > select{
 	padding: 0.5vh;
@@ -135,13 +150,6 @@ h3{
 	  box-shadow: 0 0 0 0;
 	  outline: 0;
   }
-  #lupa{
-	width: 20%;
-	background-color: lightgreen;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border: none;
-}
   ::-webkit-input-placeholder {
 	 font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
 	opacity: 0.6;
