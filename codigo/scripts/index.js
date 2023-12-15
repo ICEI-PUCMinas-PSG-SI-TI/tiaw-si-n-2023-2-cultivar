@@ -1,9 +1,61 @@
 let conectarBtn = document.getElementById("conectar");
 let pesquisaPlantasEl = document.getElementById('pesquisar');
-let contentPlantsEl = document.getElementById('content-plants');
+let asidePlantsEl = document.getElementById('aside-plants');
+let recipesPlantsEl = document.getElementById('aside-recipes');
+let AsidePlantsEl = document.getElementById("aside-plants-ul");
+let AsideRecipesEl = document.getElementById("aside-recipes-ul");
+let contentPlantsEl = document.getElementById("content-plants");
+let contentRecipesEl = document.getElementById("content-recipes");
+let dados = set_dados();
+let click_plantsEl = 0;
+let click_recipesEl = 0;
+let inicioEl = document.getElementById('inicio');
 
+inicioEl.addEventListener('click', irAoTopo);
+asidePlantsEl.addEventListener('click', mostrar_plantas);
+recipesPlantsEl.addEventListener('click', mostrar_receitas);
 pesquisaPlantasEl.addEventListener('keyup', pesquisa_plantas);
 
+
+function irAoTopo(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function mostrar_receitas(){
+  let lista_receitasEl = document.querySelectorAll('.recipes-aside');
+  if(click_recipesEl == 0){
+    click_recipesEl = 1;
+    for(let i = 0; i < lista_receitasEl.length; i++){
+      lista_receitasEl[i].style = "display:flex";
+    }
+  }
+  else{
+    click_recipesEl = 0;
+    for(let i = 0; i < lista_receitasEl.length; i++){
+      lista_receitasEl[i].style = "display:none";
+    }
+  }
+}
+
+
+function mostrar_plantas(){
+  let lista_plantasEl = document.querySelectorAll('.plants-aside');
+  if(click_plantsEl == 0){
+    click_plantsEl = 1;
+    for(let i = 0; i < lista_plantasEl.length; i++){
+      lista_plantasEl[i].style = "display:flex";
+    }
+  }
+  else{
+    click_plantsEl = 0;
+    for(let i = 0; i < lista_plantasEl.length; i++){
+      lista_plantasEl[i].style = "display:none";
+    }
+  }
+}
 
 function pesquisa_plantas(){
 
@@ -31,11 +83,9 @@ function pesquisa_plantas(){
 }
 gera_cards();
 function gera_cards(){
-  let dados = set_dados();
   let strHtml ='';
   let strAside ='';
-  let menuAsideEl = document.getElementById("menu-aside");
-  let contentPlatnsEl = document.getElementById("content-plants");
+  let strRecipes ='';
   let img = document.createElement('img');
   
   // Adiciona o elemento de imagem ao documento
@@ -49,11 +99,13 @@ function gera_cards(){
     </a>
     */
   for(let i = 0; i < dados.length; i++){
-    strHtml += `<div class="plants"><div id="plant${i+1}" class="imagens_plantas"><img src="../${dados[i].foto}"></div><div class="text-div"><h4>${dados[i].nome}:</h4><p>${dados[i].resumo}</p><div class="botoes"><a href="cultivar.html?${i+1}"><button id="cultivar-${i+1}">CULTIVAR</button></a><a href="rcGirassol.html"><button id="receita-${i+1}">RECEITAS</button></a></div></div></div>`;
-    strAside += `<a href="#plant${i+1}"><li class ="plants-aside">${dados[i].nome}</li></a>`;
+    strHtml += `<div class="plants"><div id="plant${i+1}" class="imagens_plantas"><img src="${dados[i].foto}"></div><div class="text-div"><h4>${dados[i].nome}:</h4><p>${dados[i].resumo}</p><div class="botoes"><a href="cultivar.html?${i+1}"><button id="cultivar-${i+1}">CULTIVAR</button></a><a href="rcGirassol.html"><button id="receita-${i+1}">RECEITAS</button></a></div></div></div>`;
+    strAside += `<a href="#plant${i+1}"><li class ="plants-aside" style="display:none">- ${dados[i].nome}</li></a>`;
+    strRecipes += `<a href="rcGirassol.html"><li class ="recipes-aside" style="display:none">- ${dados[i].nome}</li></a>`
   }
-  menuAsideEl.innerHTML = strAside;
-  contentPlantsEl.innerHTML = strHtml;
+  AsidePlantsEl.innerHTML += strAside;
+  AsideRecipesEl.innerHTML += strRecipes;
+  contentPlantsEl.innerHTML += strHtml;
 }
 
 function set_dados(){
@@ -73,7 +125,7 @@ function set_dados(){
         "diasSemPoda": "2 vezes por ano",
         "diasSemRegas": "1 vez por semana",
         "tempoLuz": "6 horas, 8 horas, 90℉ (32℃)",
-        "foto": "assets/girassol.jpg"
+        "foto": "../assets/girassol.jpg"
       },
       {
         "nome": "Orquídea",
@@ -83,7 +135,7 @@ function set_dados(){
         "diasSemPoda": "2 vezes por ano",
         "diasSemRegas": "1 vez por semana",
         "tempoLuz": "6 a 8 horas por dia",
-        "foto": "assets/orquidea.jpg"
+        "foto": "../assets/orquidea.jpg"
       }, 
       {
         "nome": "arroz",
@@ -93,7 +145,7 @@ function set_dados(){
         "diasSemPoda": "1 vez por ano",
         "diasSemRegas": "Continuamente inundado até 7 a 10 dias antes da colheita",
         "tempoLuz": "6 a 8 horas por dia",
-        "foto": "assets/arroz.jpg"
+        "foto": "../assets/arroz.jpg"
       },
       {
         "nome": "Feijão",
@@ -103,7 +155,7 @@ function set_dados(){
         "diasSemPoda": "1 vez por ano.",
         "diasSemRegas": "Continuamente inundado até 7 a 10 dias antes da colheita.",
         "tempoLuz": "6 a 8 horas por dia.",
-        "foto": "assets/feijao.jpeg"
+        "foto": "../assets/feijao.jpeg"
       }
     ];
     localStorage.setItem('plantas', JSON.stringify(objDados));
