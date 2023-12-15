@@ -11,7 +11,7 @@ let infosEl = document.getElementById('descricao');
     infosEl.innerHTML += `<p><strong>DIAS SEM REGAS: </strong> ${dados[plantaUrl-1].diasSemRegas}</p>`;
     infosEl.innerHTML += `<p><strong>LUZ SOLAR: </strong> ${dados[plantaUrl-1].tempoLuz}</p>`;
 
-imagemEl.src = `../${dados[plantaUrl-1].foto}`;
+imagemEl.src = `${dados[plantaUrl-1].foto}`;
 
 let descricaoEl = document.getElementById('content-infos');
 descricaoEl.innerHTML += `<p><strong>RESUMO: </strong>${dados[plantaUrl-1].resumo}</p>`; 
