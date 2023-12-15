@@ -30,7 +30,7 @@
     </ul>
 
     <div id='pesquisa'>
-    <input placeholder="Pesquisar" id='pesquisar'><button id='lupa'>🔍</button>
+    <input placeholder="Pesquisar" id='pesquisar'><div id="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
     </div>
     <ul id='bloco2'>
     <li class='lista'>
@@ -40,7 +40,7 @@
           <!--Modal para cadastro-->
         <div id="modal" class="modal">
           <form id="form">
-            <h3>Cadastro do Profisional</h3>
+            <h3 id="titulo-cadastro">Cadastro do Profisional</h3>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name"><br><br>
 
@@ -77,16 +77,46 @@
   <div id="content-plants">
   </div>
 
-  <aside>
-    <div id="topicos">
-      <ul id="menu-aside">
+  <aside id="aside-lateral">
+    <div class="container">
+      
+        <div id="inicio" class="destacado">
+          <i class="fa-solid fa-house"></i>
+          <p class="topicos">Inicio</p>
+        </div>
+        <hr>
+       
+    <!--Importante para o script--> 
+
+        <div id="aside-plants" class="destacado">
+            <i class="fa-solid fa-seedling"></i>
+            <p class="topicos">Plantas</p>
+          </div>
+          <ul id="aside-plants-ul" class="ul-aside">
+        </ul>
+
+        <div id="aside-recipes" class="destacado">
+          <i class="fa-solid fa-mortar-pestle"></i>
+          <p class="topicos">Receitas</p>
+        </div>
+        <ul id="aside-recipes-ul" class="ul-aside">
       </ul>
-    </div>
-    
-    <a href="/codigo/telas/cadastro_planta.html"><button id="Cadastrar">CADASTRAR NOVA PLANTA</button></a>
+        <hr>
+
+    <!--/script-->
+
+        <a href="cadastro_planta.html" id="Cadastrar">
+          <div id="inicio" class="destacado">
+            <i class="fa-solid fa-sun-plant-wilt"></i>
+            <p class="topicos">Cadastrar nova planta</p>
+          </div>
+        </a>
+  </div>
   </aside>
+
   <script src='/codigo/scripts/index.js'></script>
   <script src='/codigo/scripts/menu.js'></script>
+  <script src="https://kit.fontawesome.com/c83868c2ff.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
