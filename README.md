@@ -5,7 +5,7 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 * Caio De Moro Abjaud
 * Pedro Henrique Peixoto
-* Lucas Gabriel
+* Lucas Gabriel Pimenta Moreira
 * Nome completo do aluno 4
 
 ## Professores responsáveis
